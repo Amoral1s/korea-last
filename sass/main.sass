@@ -53,18 +53,32 @@
 					a
 						font-weight: 600
 						font-size: 16px
-						padding: 15px
+						padding: 15px 0
 						display: flex
 						justify-content: center
 						align-items: center
 						position: relative
 						transition: 0.3s
+						&::after
+							position: absolute
+							content: ''
+							height: 1px
+							width: 0%
+							background-color: #000000
+							bottom: 12px
+							left: 0
+							transition: 0.3s
 						&:hover
 							color: $main
+							&::after
+								transition: 0.3s
+								width: 100%
 					&.menu-active
 						z-index: 0
 						a
 							color: $main
+							&:after
+								width: 100%
 					ul
 						display: none
 						flex-wrap: wrap
@@ -91,9 +105,12 @@
 								padding-bottom: 20px
 								color: #000000!important
 								font-weight: 400
+								&:after
+									width: 0%!important
 								&:hover
 									color: $main!important
-								
+									&:after
+										width: 100%!important
 							
 		&__search
 			width: 55%
