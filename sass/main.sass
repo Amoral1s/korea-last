@@ -59,17 +59,18 @@
 						align-items: center
 						position: relative
 						transition: 0.3s
+						&:hover
+							color: $main
 					&.menu-active
 						z-index: 0
-						background-color: $main
 						a
-							color: #ffffff
+							color: $main
 					ul
 						display: none
 						flex-wrap: wrap
 						position: absolute
 						z-index: 55
-						top: calc(100% - 0px)
+						top: calc(100% - 5px)
 						left: 50%
 						width: 100%
 						transform: translateX(-50%)
@@ -90,6 +91,8 @@
 								padding-bottom: 20px
 								color: #000000!important
 								font-weight: 400
+								&:hover
+									color: $main!important
 								
 							
 		&__search

@@ -209,13 +209,16 @@ section, footer {
   transition: 0.3s;
 }
 
+.header-right__cats ul li a:hover {
+  color: #D51B51;
+}
+
 .header-right__cats ul li.menu-active {
   z-index: 0;
-  background-color: #D51B51;
 }
 
 .header-right__cats ul li.menu-active a {
-  color: #ffffff;
+  color: #D51B51;
 }
 
 .header-right__cats ul li ul {
@@ -223,7 +226,7 @@ section, footer {
   flex-wrap: wrap;
   position: absolute;
   z-index: 55;
-  top: calc(100% - 0px);
+  top: calc(100% - 5px);
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
@@ -248,6 +251,10 @@ section, footer {
   padding-bottom: 20px;
   color: #000000 !important;
   font-weight: 400;
+}
+
+.header-right__cats ul li ul li a:hover {
+  color: #D51B51 !important;
 }
 
 .header-right__search {
