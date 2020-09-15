@@ -214,7 +214,7 @@ section, footer {
   content: '';
   height: 1px;
   width: 0%;
-  background-color: #000000;
+  background-color: #D51B51;
   bottom: 12px;
   left: 0;
   transition: 0.3s;
@@ -338,7 +338,12 @@ section, footer {
   left: 0;
   height: 1px;
   width: 0%;
-  background-color: #000000;
+  background-color: #D51B51;
+  transition: 0.3s;
+}
+
+.header__phone a:hover {
+  color: #D51B51;
   transition: 0.3s;
 }
 
@@ -366,6 +371,7 @@ section, footer {
   font-weight: 400;
   position: relative;
   transition: 0.3s;
+  opacity: 0.6;
 }
 
 .header__nav ul li a:after {
@@ -375,8 +381,13 @@ section, footer {
   left: 0;
   height: 1px;
   width: 0%;
-  background-color: #000000;
+  background-color: #D51B51;
   transition: 0.3s;
+}
+
+.header__nav ul li a:hover {
+  transition: 0.3s;
+  color: #D51B51;
 }
 
 .header__nav ul li a:hover::after {

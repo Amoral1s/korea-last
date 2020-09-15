@@ -64,7 +64,7 @@
 							content: ''
 							height: 1px
 							width: 0%
-							background-color: #000000
+							background-color: $main
 							bottom: 12px
 							left: 0
 							transition: 0.3s
@@ -149,9 +149,11 @@
 				left: 0
 				height: 1px
 				width: 0%
-				background-color: $dark
+				background-color: $main
 				transition: 0.3s
 			&:hover
+				color: $main
+				transition: 0.3s
 				&::after
 					transition: 0.3s
 					width: 100%
@@ -168,6 +170,7 @@
 					font-weight: 400
 					position: relative
 					transition: 0.3s
+					opacity: 0.6
 					&:after
 						position: absolute
 						content: ''
@@ -175,9 +178,11 @@
 						left: 0
 						height: 1px
 						width: 0%
-						background-color: $dark
+						background-color: $main
 						transition: 0.3s
 					&:hover
+						transition: 0.3s
+						color: $main
 						&::after
 							transition: 0.3s
 							width: 100%
