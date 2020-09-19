@@ -287,8 +287,8 @@ a.button {
   padding-left: 30px;
   padding-right: 30px;
   margin: auto;
-  padding-top: 160px;
   padding-bottom: 30px;
+  margin-top: 140px;
 }
 
 .header-mob__search {
@@ -296,7 +296,6 @@ a.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .header-mob__search input[type="search"] {
