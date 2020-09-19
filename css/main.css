@@ -700,8 +700,8 @@ a.button {
   position: absolute;
   left: 50px;
   bottom: 50px;
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
   background-color: #D51B51;
   background-image: url(../img/icons/arrow-right.svg);
   background-repeat: no-repeat;
@@ -740,7 +740,7 @@ a.button {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 16px;
   color: #D51B51;
 }
 
@@ -968,7 +968,7 @@ a.button {
   transform: translateY(-50%);
   right: 0;
   color: #D51B51;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .footer {
