@@ -70,7 +70,7 @@ input, button, select, textarea {
 
 input[type="text"], input[type="tel"], input[type="password"], input[type="email"], input[type="search"] {
   box-shadow: none;
-  appearance: none;
+  appearance: none !important;
 }
 
 input[type="text"], input[type="tel"], input[type="submit"], button {
