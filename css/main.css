@@ -35,7 +35,7 @@ body, html {
   color: #000000;
   font-family: "sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.3;
   overflow-x: hidden;
   -ms-overflow-style: scrollbar;
@@ -589,7 +589,7 @@ a.button {
   background-color: #D51B51;
   background-image: url(../img/icons/arrow-right.svg);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 30%;
   background-position: center;
 }
 
@@ -666,7 +666,7 @@ a.button {
   background-image: url(../img/icons/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%;
+  background-size: 30%;
 }
 
 .feed-wrap__slider .slick-prev {
