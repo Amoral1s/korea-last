@@ -124,7 +124,7 @@ section, footer {
   padding-bottom: 70px;
 }
 
-.header-mob__search input, .email-wrap form input[type="email"], .email-wrap form .button {
+.header-mob__search input, .email-wrap form input[type="email"], .email-wrap form .button, .header-right__search input {
   appearance: none;
   -webkit-appearance: none;
 }
