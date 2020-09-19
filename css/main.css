@@ -35,7 +35,7 @@ body, html {
   color: #000000;
   font-family: "sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.3;
   overflow-x: hidden;
   -ms-overflow-style: scrollbar;
@@ -63,15 +63,13 @@ div, span, article, nav, section, main, header {
 }
 
 input, button, select, textarea {
-  border: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #E5E5E5;
   font-size: 14px;
   color: #000000;
 }
 
 input[type="text"], input[type="tel"], input[type="password"], input[type="email"] {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: inset -1px 3px 7px rgba(0, 0, 0, 0.07);
+  box-shadow: none;
   appearance: none;
 }
 
@@ -126,6 +124,120 @@ section, footer {
   padding-bottom: 70px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+  overflow: hidden;
+  display: none;
+}
+
+#thx {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  height: 500px;
+  max-width: 440px;
+  width: 100%;
+  background-color: #F7F8FB;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+
+#thx div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  flex-direction: column;
+}
+
+#thx div b {
+  font-size: 40px;
+  color: #D51B51;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#thx div p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F7F8FB;
+  width: 100%;
+  max-width: 440px;
+  padding: 35px;
+  z-index: 60;
+  display: none;
+}
+
+.popup form small {
+  display: block;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  width: 100%;
+}
+
+.popup form small a {
+  color: blue;
+}
+
+.popup form textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding-top: 15px;
+  padding-left: 15px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+
+.popup form input {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popup form input.button {
+  width: 100%;
+  max-width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.popup h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 26px;
+  right: 40px;
+  color: #D51B51;
+  font-size: 36px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .title {
   font-size: 30px;
   line-height: 1.3;
@@ -143,6 +255,7 @@ section, footer {
   transition: 0.3s;
   font-size: 14px;
   cursor: pointer;
+  box-shadow: none;
   padding: 10px 20px;
 }
 
@@ -150,6 +263,7 @@ section, footer {
   background-color: #F7F8FB;
   color: #000000;
   transition: 0.3s;
+  border: 1px solid #E5E5E5;
 }
 
 a.button {
@@ -205,7 +319,7 @@ a.button {
 
 .header-right__cats ul li a {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   padding: 15px 0;
   display: flex;
   justify-content: center;
@@ -326,6 +440,7 @@ a.button {
   margin-left: 14px;
   position: relative;
   transition: 0.3s;
+  font-size: 12px;
 }
 
 .header-right__menu a p::after {
@@ -735,7 +850,7 @@ a.button {
   display: block;
   padding-right: 40px;
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .brands-wrap {
@@ -808,7 +923,7 @@ a.button {
 
 .news-wrap__buttons span {
   color: #cccccc;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .news-wrap__buttons a {
@@ -829,7 +944,7 @@ a.button {
 }
 
 .news-wrap__item p {
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 20px;
 }
 
@@ -955,9 +1070,65 @@ a.button {
   margin-top: 15px;
 }
 
+@media (max-width: 1520px) {
+  .email-item {
+    display: none;
+  }
+}
+
 @media (max-width: 1199px) {
-  body {
-    background-color: #fff;
+  .footer-bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom .container img {
+    display: block;
+    margin-top: 15px;
+  }
+  .footer-wrap__menu {
+    width: 18%;
+  }
+  .footer-wrap__social {
+    width: 28%;
+  }
+  .email-wrap form input[type="email"] {
+    width: 370px;
+  }
+  .email-wrap form .button {
+    width: 260px;
+    font-size: 20px;
+  }
+  .brands-wrap__item {
+    width: calc(100% / 5);
+  }
+  .blog__item h3 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .blog__item {
+    width: 37%;
+  }
+  .blog__item:nth-child(1), .blog__item:nth-child(4) {
+    width: 60%;
+  }
+  .features-item__item b, .features-item__item p {
+    font-size: 18px;
+  }
+  .offer-wrap__left {
+    width: 60%;
+  }
+  .offer-wrap__right {
+    width: 37.5%;
+  }
+  .header-right__cats ul li a {
+    font-size: 14px;
+  }
+  .header-right__search {
+    width: 40%;
+  }
+  .header-right__menu {
+    width: 60%;
   }
 }
 
