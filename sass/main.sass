@@ -50,6 +50,7 @@ a.button
 				display: flex
 				justify-content: space-between
 				align-items: center
+				background-color: #fff
 				li
 					a
 						font-weight: 600
@@ -270,6 +271,333 @@ a.button
 			&:last-child
 				align-items: flex-start
 				margin-bottom: 0
+
+.features
+	background-color: $light
+	&-item
+		display: flex	
+		justify-content: space-between
+		align-items: center
+		padding: 30px 0
+		&__item
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			img
+				margin-right: 17px
+			b
+				font-size: 20px
+				font-weight: 600
+			p
+				font-size: 20px
+
+.blog
+	.title
+		position: relative
+	&__wrap
+		margin-top: 70px
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: stretch
+	&__item
+		height: 300px
+		width: 32%
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		margin-bottom: 3%
+		padding: 50px 50px
+		position: relative
+		transition: 0.3s
+		&:hover
+			transition: 0.3s
+			opacity: 0.7
+		span
+			position: absolute
+			left: 50px
+			bottom: 50px
+			height: 45px
+			width: 45px
+			background-color: $main
+			background-image: url(../img/icons/arrow-right.svg)
+			background-repeat: no-repeat
+			background-size: 40%
+			background-position: center
+		h3
+			font-size: 25px
+			line-height: 35px
+			max-width: 300px
+		&:nth-child(1), &:nth-child(4)
+			width: 65%
+		&:nth-child(2), &:nth-child(4)
+			span
+				left: auto
+				right: 50px
+		&:nth-child(3)
+			flex-direction: row-reverse
+			justify-content: flex-end
+			align-items: flex-end
+			span
+				bottom: auto
+				top: 50px
+		
+	.blog-href
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 22px
+		color: $main
+
+.feed
+	background-color: $light
+	.title
+		margin-bottom: 70px
+	&-wrap
+		&__slider
+			display: flex
+			justify-content: center
+			align-items: stretch
+			margin-bottom: 70px
+			.slick-list
+				display: flex
+			.slick-track
+				display: flex
+				align-items: stretch
+			.slick-arrow
+				position: absolute
+				font-size: 0
+				background-color: $main
+				height: 45px
+				width: 45px
+				display: flex
+				right: 20px
+				top: -110px
+				box-shadow: none
+				cursor: pointer
+				background-image: url(../img/icons/arrow-right.svg)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: 50%
+			.slick-prev
+				right: calc(20px + 40px + 30px)
+				transform: rotate(180deg)
+		&__slide
+			padding: 50px 20px
+			background-color: #fff
+			width: 23%
+			margin-right: 20px
+			display: flex!important
+			flex-direction: column
+			height: 100%
+			h3
+				font-size: 24px
+				margin-bottom: 30px
+		&__button
+			display: flex
+			justify-content: center
+			.button
+				height: 70px
+				width: 330px
+				display: flex
+				justify-content: center
+				align-items: center
+				max-width: 330px
+				font-weight: 600
+				font-size: 24px
+				padding: 0
+				&:hover
+					background-color: #fff
+
+.about
+	.title
+		margin-bottom: 70px
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		&__right
+			width: 30%
+		&__left
+			width: 70%
+			display: flex
+			flex-wrap: wrap
+			p
+				width: 50%
+				display: block
+				padding-right: 40px
+				margin-bottom: 30px
+				font-size: 16px
+
+.brands
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: stretch
+		&__item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: calc(100% / 6)
+			margin-bottom: 20px
+
+.email
+	background-color: $light
+	position: relative
+	&-item
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 0px
+	&-wrap
+		form
+			display: flex
+			justify-content: space-between
+			h3
+				font-size: 24px
+				max-width: 260px
+			input[type="email"]
+				height: 70px
+				width: 440px
+				background-color: #fff
+				box-shadow: none
+				padding-left: 20px
+			.button
+				width: 280px
+				max-width: 280px
+				height: 70px
+				font-size: 24px
+				box-shadow: none
+
+.news
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: stretch
+		&__buttons
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 0 20px
+			margin-top: 30px
+			margin-bottom: 20px
+			span
+				color: #cccccc
+				font-size: 16px
+			a
+				color: $main
+				font-size: 20px
+				font-weight: 400
+		&__item
+			display: block
+			border: 1px solid #F7F8FB
+			width: 31%
+			h2
+				padding: 30px 20px
+				font-size: 20px
+			p
+				font-size: 16px
+				padding: 0 20px
+			img
+				width: 100%
+				height: 200px
+				object-fit: cover
+				display: block
+	.title
+		position: relative
+		width: 100%
+		margin-bottom: 70px
+		.news-href
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 0
+			color: $main
+			font-size: 24px	
+
+.footer
+	background-color: $light
+	padding-top: 50px
+	padding-bottom: 0
+	&-bottom
+		background-color: #fff
+		.container
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-top: 15px
+			padding-bottom: 15px
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-bottom: 50px
+		&__menu
+			display: block
+			width: 20%
+			b
+				font-size: 20px
+				margin-bottom: 20px
+				display: block
+			ul
+				li
+					a
+						font-size: 18px
+						font-weight: 400
+						display: block
+						margin-bottom: 5px
+		&__social
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			justify-content: flex-start
+			width: 20%
+			a
+				text-decoration: underline
+			span
+				display: flex
+				width: 100%
+				justify-content: flex-start
+				margin-bottom: 20px
+				a
+					display: block
+					margin-right: 20px
+					text-decoration: none
+					
+			b
+				color: #837D77
+				font-size: 24px
+				margin-bottom: 20px
+			p
+				display: block
+				margin-bottom: 20px
+		&__logo
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			width: 30%
+			a
+				color: $green
+				font-size: 24px
+				font-weight: 600
+				display: block
+				margin-bottom: 5px
+			p
+				display: block
+				font-size: 18px
+				margin-top: 15px
+
+
+
+
+
 
 
 
