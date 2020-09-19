@@ -1047,6 +1047,7 @@ a.button {
 
 .footer-wrap__social p {
   display: block;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 
@@ -1067,7 +1068,7 @@ a.button {
 
 .footer-wrap__logo p {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 15px;
 }
 
