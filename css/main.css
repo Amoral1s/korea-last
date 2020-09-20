@@ -1027,14 +1027,14 @@ a.button {
 
 .email-wrap form input[type="email"] {
   height: 50px;
-  width: 440px;
+  width: 380px;
   background-color: #fff;
   box-shadow: none;
   padding-left: 20px;
 }
 
 .email-wrap form .button {
-  width: 280px;
+  width: 230px;
   max-width: 280px;
   height: 50px;
   font-size: 16px;
