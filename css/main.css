@@ -1105,7 +1105,7 @@ a.button {
   font-size: 16px;
 }
 
-.footer-wrap__mob-menu {
+.footer-wrap__mob-menu, .header-mob__row {
   display: none;
 }
 
@@ -1496,6 +1496,9 @@ a.button {
   }
   .offer-wrap__item {
     width: 48%;
+  }
+  .header-mob__row {
+    display: flex;
   }
 }
 
