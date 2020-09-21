@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   //Всплывающее меню
   if (jQuery(window).width() < 992) {
     jQuery('.header-right__cats ul li.cat-parent').hover(function(){
@@ -16,6 +17,17 @@ $(document).ready(function () {
       jQuery('.open-menu').slideDown(300);
     });
   } else {
+    const menuLi = document.querySelectorAll('li.cat-parent');
+
+    menuLi.forEach((elem) => {
+      const divElem = document.createElement('div');
+      divElem.classList.add('arrow-down');
+
+      elem.insertBefore(divElem, elem.children[1]);
+    });
+
+
+
     jQuery('.header-right__cats ul li.cat-parent').hover(function(){
       jQuery(this).addClass('menu-active');
       console.log(jQuery(this));

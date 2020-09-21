@@ -46,6 +46,12 @@ a, a:hover, a:active, a:link, a:focus {
   outline: none;
   color: #000000;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #D51B51;
+  transition: 0.3s;
 }
 
 img {
@@ -1208,6 +1214,22 @@ a.button {
   display: block;
   font-size: 14px;
   margin-top: 15px;
+}
+
+.arrow-down {
+  height: 10px;
+  width: 10px;
+  margin-left: 3px;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+li.cat-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1520px) {
